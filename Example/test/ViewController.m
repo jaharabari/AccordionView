@@ -41,7 +41,13 @@
     view2.backgroundColor = [UIColor blueColor];
     
     [accordion addHeader:header2 withView:view2];
+    UIButton *header3 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 0, 30)];
+    [header3 setTitle:@"First row" forState:UIControlStateNormal];
     
+    UIView *view3 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 200)];
+    view1.backgroundColor = [UIColor redColor];
+    
+    [accordion addHeader:header3 withView:view3];
     [accordion setNeedsLayout];
     
     // Set this if you want to allow multiple selection
